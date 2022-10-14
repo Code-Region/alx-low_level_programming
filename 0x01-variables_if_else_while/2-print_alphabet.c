@@ -10,8 +10,8 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		putchar(alh[i]);
+		putchar(aph[i]);
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
