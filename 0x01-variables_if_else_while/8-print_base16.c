@@ -5,16 +5,15 @@
  */
 int main(void)
 {
-	char a_f[6] = "abcdef";
 	int b;
 
 	for (b = 48; b < 58; b++)
 	{
 		putchar(b);
 	}
-	for (int i = 0; i < 6; i++)
+	for (int i = 97; i < 103; i++)
 	{
-		putchar(a_f[i]);
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);
