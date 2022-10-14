@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * All your code should be in the main function
- * You can only use putchar twice in your code
+ * main - Print the Alphabet
+ * Return: always (0) success
  */
 int main(void)
 {
