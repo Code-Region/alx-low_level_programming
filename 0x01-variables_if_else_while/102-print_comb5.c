@@ -1,47 +1,38 @@
 #include <stdio.h>
 /**
- * main - Prints numbers between 00 to 99.
- * Return: Always 0 (Success)
+ * main - print allpossible of 2 digit numbers.
+ * Return: 0 success.
  */
 int main(void)
 {
-	int i, e, g, h, op1, op2;
+	int i, j;
+	int u, q, c, d;
 
-	i = e = g = h = 48;
-
-	while (h < 58)
+	for (i = 0; i < 100; i++)
 	{
-		g = 48;
-		while (g < 58)
+		u = i / 10;
+		q = i % 10;
+
+		for (j = 0; j < 100; j++)
 		{
-			e = 48;
-			while (e < 58)
+			c = j / 10;
+			d = j % 10;
+
+			if (u < c || (u == c && q < d))
 			{
-				i = 48;
-				while (i < 58)
+				putchar(u + '0');
+				putchar(q + '0');
+				putchar(32);
+				putchar(c + '0');
+				putchar(d + '0');
+				if (!(u == 9 && q == 8))
 				{
-					op1 = (h * 10) + g;
-					op2 = (e * 10) + i;
-					if (op1 < op2)
-					{
-						putchar(h);
-						putchar(g);
-						putchar(' ');
-						putchar(e);
-						putchar(i);
-					if (h == 57 && g == 56 && e == 57 && i == 57)
-						break;
-						putchar(',');
-						putchar(' ');
-					}
-					i++;
+					putchar(44);
+					putchar(32);
 				}
-				e++;
 			}
-			g++;
 		}
-		h++;
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
