@@ -7,9 +7,7 @@
 
 int _islower(int c)
 {
-	char lett;
-
-	for (lett = 'a'; lett <= 'z'; lett ++)
+	for (c = 'a'; <= 'z'; c++)
 	{
 		return (1);
 	}else
